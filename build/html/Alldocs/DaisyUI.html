@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>5.Tailwind Library (Daisy UI) &#8212; FrontEnd and UI/UX Documentation  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6.reference websites" href="websiteRef.html" />
+    <link rel="prev" title="4.Project on Tailwind CSS" href="Project.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="tailwind-library-daisy-ui">
+<h1><strong>5.Tailwind Library (Daisy UI)</strong><a class="headerlink" href="#tailwind-library-daisy-ui" title="Link to this heading">¶</a></h1>
+<section id="introduction">
+<h2><strong>5.1 Introduction</strong><a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>Daisy UI is a utility-first CSS framework designed to accelerate web development. It’s built on top of Tailwind CSS and provides a set of pre-designed components and utility classes that you can use to style your web applications.</p>
+</section>
+<section id="getting-started">
+<h2><strong>5.2 Getting Started</strong><a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h2>
+<section id="installation">
+<h3><strong>5.2.1 Installation</strong><a class="headerlink" href="#installation" title="Link to this heading">¶</a></h3>
+<p>To start using Daisy UI, you’ll need to include it in your project. You can install it via npm:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>install<span class="w"> </span>daisyui
+</pre></div>
+</div>
+</section>
+<section id="basic-usage">
+<h3><strong>5.2.2 Basic Usage</strong><a class="headerlink" href="#basic-usage" title="Link to this heading">¶</a></h3>
+<p>Once installed, import Daisy UI’s CSS file into your project:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>@import<span class="w"> </span><span class="s1">&#39;daisyui&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Now, you can start using Daisy UI’s components and utility classes in your HTML files.</p>
+<p><strong>5.3 Components</strong></p>
+<p>Daisy UI provides a range of pre-designed components that you can use in your projects. Here are some of the key components:</p>
+</section>
+<section id="alerts">
+<h3><strong>5.2.1 Alerts</strong><a class="headerlink" href="#alerts" title="Link to this heading">¶</a></h3>
+<p>Alerts provide feedback messages to users.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;alert alert-success&quot;</span><span class="p">&gt;</span>
+   Success! Your changes have been saved.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="buttons">
+<h3><strong>5.2.2 Buttons</strong><a class="headerlink" href="#buttons" title="Link to this heading">¶</a></h3>
+<p>Buttons are interactive elements that trigger actions.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;</span>Click me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="card">
+<h3><strong>5.2.3 Card</strong><a class="headerlink" href="#card" title="Link to this heading">¶</a></h3>
+<p>Cards are containers for organizing content.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-header&quot;</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-body&quot;</span><span class="p">&gt;</span>Content<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="forms">
+<h3><strong>5.2.4 Forms</strong><a class="headerlink" href="#forms" title="Link to this heading">¶</a></h3>
+<p>Forms provide input fields for user interaction.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-input&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Username&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="modals">
+<h3><strong>5.2.5 Modals</strong><a class="headerlink" href="#modals" title="Link to this heading">¶</a></h3>
+<p>Modals are pop-up windows for displaying additional content.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-box&quot;</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-header&quot;</span><span class="p">&gt;</span>Modal Title<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-body&quot;</span><span class="p">&gt;</span>Modal Content<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="navigation">
+<h3><strong>5.2.6 Navigation</strong><a class="headerlink" href="#navigation" title="Link to this heading">¶</a></h3>
+<p>Navigation elements help users move around the website.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar-menu&quot;</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>About<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Services<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="typography">
+<h3><strong>5.2.7 Typography</strong><a class="headerlink" href="#typography" title="Link to this heading">¶</a></h3>
+<p>Typography classes help control the appearance of text like font and font weight.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-lg font-semibold&quot;</span><span class="p">&gt;</span>Heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-2lg font-bold&quot;</span><span class="p">&gt;</span>Heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="utilities">
+<h2><strong>5.3 Utilities</strong><a class="headerlink" href="#utilities" title="Link to this heading">¶</a></h2>
+<p>Daisy UI offers a comprehensive set of utility classes for styling elements. Here are some commonly used utilities:</p>
+<section id="color">
+<h3><strong>5.3.1 Color</strong><a class="headerlink" href="#color" title="Link to this heading">¶</a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;bg-blue-500 text-white&quot;</span><span class="p">&gt;</span>Blue Background<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="spacing">
+<h3><strong>5.3.2 Spacing</strong><a class="headerlink" href="#spacing" title="Link to this heading">¶</a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p-4&quot;</span><span class="p">&gt;</span>Padding<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="sizing">
+<h3><strong>5.3.3 Sizing</strong><a class="headerlink" href="#sizing" title="Link to this heading">¶</a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;w-24 h-24&quot;</span><span class="p">&gt;</span>Width and Height<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="visibility">
+<h3><strong>5.3.4 Visibility</strong><a class="headerlink" href="#visibility" title="Link to this heading">¶</a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span><span class="p">&gt;</span>Hidden Element<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="themes">
+<h2><strong>5.4 Themes</strong><a class="headerlink" href="#themes" title="Link to this heading">¶</a></h2>
+<p>daisyUI comes with a number of themes, which you can use with no extra effort. Each theme defines a set of colors which will be used on all daisyUI elements. To use a theme, add its name in tailwind.config.js and activate it by adding data-theme attribute to HTML tag:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module.exports<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>//...
+<span class="w">    </span>daisyui:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span>themes:<span class="w"> </span><span class="o">[</span><span class="s2">&quot;light&quot;</span>,<span class="w"> </span><span class="s2">&quot;dark&quot;</span>,<span class="w"> </span><span class="s2">&quot;cupcake&quot;</span><span class="o">]</span>,
+<span class="w">    </span><span class="o">}</span>,
+<span class="o">}</span>
+</pre></div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">data-theme</span><span class="o">=</span><span class="s">&quot;cupcake&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="integration-with-frameworks">
+<h2><strong>5.5 Integration with Frameworks</strong><a class="headerlink" href="#integration-with-frameworks" title="Link to this heading">¶</a></h2>
+<p>Daisy UI can be integrated with several popular frameworks like as follow:</p>
+<ul class="simple">
+<li><p><strong>Tailwind css</strong></p></li>
+<li><p><strong>laravel</strong></p></li>
+<li><p><strong>Vue.js</strong></p></li>
+<li><p><strong>React.js</strong></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">FrontEnd and UI/UX Documentation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html"><strong>1. Introduction</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Wireframe.html"><strong>2.What is a wireframe</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="TailwindCss.html"><strong>3.What is Tailwind CSS</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Project.html"><strong>4.Project on Tailwind CSS</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>5.Tailwind Library (Daisy UI)</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction"><strong>5.1 Introduction</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started"><strong>5.2 Getting Started</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation"><strong>5.2.1 Installation</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#basic-usage"><strong>5.2.2 Basic Usage</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alerts"><strong>5.2.1 Alerts</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#buttons"><strong>5.2.2 Buttons</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#card"><strong>5.2.3 Card</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forms"><strong>5.2.4 Forms</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modals"><strong>5.2.5 Modals</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#navigation"><strong>5.2.6 Navigation</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#typography"><strong>5.2.7 Typography</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#utilities"><strong>5.3 Utilities</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#color"><strong>5.3.1 Color</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spacing"><strong>5.3.2 Spacing</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sizing"><strong>5.3.3 Sizing</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#visibility"><strong>5.3.4 Visibility</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#themes"><strong>5.4 Themes</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#integration-with-frameworks"><strong>5.5 Integration with Frameworks</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="websiteRef.html"><strong>6.reference websites</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="WebMap.html"><strong>7. Website Mapping</strong></a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Project.html" title="previous chapter"><strong>4.Project on Tailwind CSS</strong></a></li>
+      <li>Next: <a href="websiteRef.html" title="next chapter"><strong>6.reference websites</strong></a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Sandeep.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/Alldocs/DaisyUI.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

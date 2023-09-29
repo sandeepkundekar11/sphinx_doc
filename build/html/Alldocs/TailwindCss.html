@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3.What is Tailwind CSS &#8212; FrontEnd and UI/UX Documentation  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4.Project on Tailwind CSS" href="Project.html" />
+    <link rel="prev" title="2.What is a wireframe" href="Wireframe.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="what-is-tailwind-css">
+<h1><strong>3.What is Tailwind CSS</strong><a class="headerlink" href="#what-is-tailwind-css" title="Link to this heading">¶</a></h1>
+<p>Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined utility classes to rapidly build modern and responsive web applications. It allows developers to create complex layouts and designs without writing custom CSS.</p>
+<section id="features">
+<h2><strong>3.1 Features</strong><a class="headerlink" href="#features" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Utility-first Approach</strong>:
+Tailwind CSS emphasizes utility classes for styling, which allows for quick prototyping and development.</p></li>
+<li><p><strong>Responsive Design</strong>:
+It provides classes for building responsive and mobile-friendly interfaces.</p></li>
+<li><p><strong>Highly Configurable</strong>:
+Tailwind CSS can be configured to match specific design requirements.</p></li>
+<li><p><strong>Plugin Ecosystem</strong>:
+Developers can extend Tailwind’s functionality with plugins for added features and components.</p></li>
+</ul>
+</section>
+<section id="installation">
+<h2><strong>3.2 Installation</strong><a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<section id="via-cdn">
+<h3><strong>3.2.1 Via CDN</strong><a class="headerlink" href="#via-cdn" title="Link to this heading">¶</a></h3>
+<p>Include the Tailwind CSS stylesheet in the &lt;head&gt; section of your HTML file:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="using-npm">
+<h3><strong>3.2.2 Using NPM</strong><a class="headerlink" href="#using-npm" title="Link to this heading">¶</a></h3>
+<p>Install Tailwind CSS using NPM:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>install<span class="w"> </span>tailwindcss
+</pre></div>
+</div>
+</section>
+</section>
+<section id="configuration">
+<h2><strong>3.3 Configuration</strong><a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h2>
+<p>Generate a Tailwind CSS configuration file by running the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npx<span class="w"> </span>tailwindcss<span class="w"> </span>init
+</pre></div>
+</div>
+<p>This creates a tailwind.config.js file where you can customize various aspects of Tailwind CSS, including colors, fonts, and more.</p>
+<section id="creating-custom-styles">
+<h3><strong>3.3.1 Creating Custom Styles</strong><a class="headerlink" href="#creating-custom-styles" title="Link to this heading">¶</a></h3>
+<p>Extend or override default styles by modifying the configuration file. Add custom CSS classes, themes, and variants to tailor Tailwind CSS to your project’s needs.</p>
+</section>
+<section id="responsive-design">
+<h3><strong>3.3.2 Responsive Design</strong><a class="headerlink" href="#responsive-design" title="Link to this heading">¶</a></h3>
+<p>Tailwind CSS provides responsive utility classes for creating designs that adapt to different screen sizes. Use classes like sm:, md:, lg:, and xl: to specify styles for various breakpoints.</p>
+</section>
+</section>
+<section id="utility-classes">
+<h2><strong>3.4 Utility Classes</strong><a class="headerlink" href="#utility-classes" title="Link to this heading">¶</a></h2>
+<section id="spacing">
+<h3><strong>3.4.1 Spacing</strong><a class="headerlink" href="#spacing" title="Link to this heading">¶</a></h3>
+<p>it provides a set of utility classes that make it easy to add margin and padding to elements. These classes follow a specific naming convention:</p>
+<ul class="simple">
+<li><p>m-: Margin utility</p></li>
+<li><p>p-: Padding utility</p></li>
+</ul>
+<p>These classes can be further customized with modifiers to control the size of the spacing. The size values range from 0 to 5 and can be combined with other modifiers to fine-tune the spacing. For example</p>
+<ul class="simple">
+<li><p>m-0: No margin</p></li>
+<li><p>m-1: Small margin</p></li>
+<li><p>m-2: Medium margin</p></li>
+<li><p>m-3: Large margin</p></li>
+<li><p>m-4: Extra large margin</p></li>
+<li><p>m-5: Double extra large margin</p></li>
+</ul>
+<p>The same convention applies to padding classes (p-0, p-1, p-2, etc.).</p>
+<p>Additionally, you can apply these utilities to specific sides of an element using the following prefixes:</p>
+<ul class="simple">
+<li><p>m-t-: Margin top</p></li>
+<li><p>m-r-: Margin right</p></li>
+<li><p>m-b-: Margin bottom</p></li>
+<li><p>m-l-: Margin left</p></li>
+<li><p>p-t-: Padding top</p></li>
+<li><p>p-r-: Padding right</p></li>
+<li><p>p-b-: Padding bottom</p></li>
+<li><p>p-l-: Padding left</p></li>
+</ul>
+</section>
+<section id="typography">
+<h3><strong>3.4.2 Typography</strong><a class="headerlink" href="#typography" title="Link to this heading">¶</a></h3>
+<p>Tailwind CSS provides utility classes for handling typography, which includes setting font sizes, font weights, line heights, and more. Here are some of the common typography-related classes in Tailwind CSS:</p>
+<p><strong>1) Font Size (text-)</strong>:</p>
+<ul class="simple">
+<li><p>text-xs: Extra small text</p></li>
+<li><p>text-sm: Small text</p></li>
+<li><p>text-base: Default text size</p></li>
+<li><p>text-lg: Large text</p></li>
+<li><p>text-xl: Extra large text</p></li>
+<li><p>text-2xl: Double extra large text</p></li>
+<li><p>text-3xl: Triple extra large text</p></li>
+<li><p>…and so on (text-4xl, text-5xl, etc.).</p></li>
+</ul>
+<p><strong>2)Font Weight (font-)</strong>:</p>
+<ul class="simple">
+<li><p>font-thin: Thin font weight</p></li>
+<li><p>font-extralight: Extra light font weight</p></li>
+<li><p>font-light: Light font weight</p></li>
+<li><p>font-normal: Normal font weight (default)</p></li>
+<li><p>font-medium: Medium font weight</p></li>
+<li><p>font-semibold: Semi-bold font weight</p></li>
+<li><p>font-bold: Bold font weight</p></li>
+<li><p>font-extrabold: Extra bold font weight</p></li>
+<li><p>font-black: Black font weight</p></li>
+</ul>
+<p><strong>3)Line Height (leading-)</strong>:</p>
+<ul class="simple">
+<li><p>leading-none: No additional line height</p></li>
+<li><p>leading-tight: Tight line height</p></li>
+<li><p>leading-normal: Normal line height (default)</p></li>
+<li><p>leading-relaxed: Relaxed line height</p></li>
+<li><p>leading-loose: Loose line height</p></li>
+</ul>
+<p><strong>4)Letter Spacing (tracking-)</strong>:</p>
+<ul class="simple">
+<li><p>tracking-tighter: Tighter letter spacing</p></li>
+<li><p>tracking-tight: Tight letter spacing</p></li>
+<li><p>tracking-normal: Normal letter spacing (default)</p></li>
+<li><p>tracking-wide: Wide letter spacing</p></li>
+<li><p>tracking-wider: Wider letter spacing</p></li>
+<li><p>tracking-widest: Widest letter spacing</p></li>
+</ul>
+<p><strong>5)Text Alignment (text-)</strong>:</p>
+<ul class="simple">
+<li><p>text-left: Left-align text</p></li>
+<li><p>text-center: Center-align text</p></li>
+<li><p>text-right: Right-align text</p></li>
+<li><p>text-justify: Justify text</p></li>
+</ul>
+<p><strong>6)Font Style (italic)</strong>:</p>
+<ul class="simple">
+<li><p>italic: Make text italic</p></li>
+</ul>
+<p><strong>7)Uppercase / Lowercase / Capitalize</strong>:</p>
+<ul class="simple">
+<li><p>uppercase: Convert text to uppercase</p></li>
+<li><p>lowercase: Convert text to lowercase</p></li>
+<li><p>capitalize: Capitalize the first letter of each word</p></li>
+</ul>
+<p><strong>8)Text Color (text-)</strong>:</p>
+<ul class="simple">
+<li><p>text-{color}: Apply a specific text color (e.g., text-red-500)</p></li>
+</ul>
+<p><strong>9)Text Decoration (underline / no-underline)</strong>:</p>
+<ul class="simple">
+<li><p>underline: Underline text</p></li>
+<li><p>no-underline: Remove underline</p></li>
+</ul>
+<p><strong>10)Text Overflow (truncate)</strong>:</p>
+<ul class="simple">
+<li><p>truncate: Truncate text with an ellipsis (…) when it overflows</p></li>
+</ul>
+</section>
+<section id="colors">
+<h3><strong>3.4.3  Colors</strong><a class="headerlink" href="#colors" title="Link to this heading">¶</a></h3>
+<p>In Tailwind CSS, you can use a wide range of utility classes to apply colors to various elements. Tailwind provides a default color palette, but it also allows for customization and extension. Here are some common ways to work with colors in Tailwind:</p>
+<p><strong>1)Text Color (text-)</strong>:</p>
+<ul class="simple">
+<li><p>text-{color}: This class changes the color of the text. For example, text-red-500 sets the text color to a shade of red.</p></li>
+</ul>
+<p><strong>2)Background Color (bg-)</strong>:</p>
+<ul class="simple">
+<li><p>bg-{color}: This class changes the background color of an element. For example, bg-blue-200 sets the background color to a light shade of blue.</p></li>
+</ul>
+<p><strong>3)Border Color (border-)</strong>:</p>
+<ul class="simple">
+<li><p>border-{color}: This class sets the border color of an element. For example, border-green-500 sets the border color to a shade of green.</p></li>
+</ul>
+<p><strong>4)Hover and Focus States</strong>:</p>
+<ul class="simple">
+<li><p>hover:text-{color}: This class changes the text color on hover.</p></li>
+<li><p>hover:bg-{color}: This class changes the background color on hover.</p></li>
+<li><p>hover:border-{color}: This class changes the border color on hover.</p></li>
+<li><p>focus:text-{color}: This class changes the text color on focus.</p></li>
+<li><p>focus:bg-{color}: This class changes the background color on focus.</p></li>
+<li><p>focus:border-{color}: This class changes the border color on focus.</p></li>
+</ul>
+<p><strong>5)Active States</strong>:</p>
+<ul class="simple">
+<li><p>active:text-{color}: This class changes the text color on active.</p></li>
+<li><p>active:bg-{color}: This class changes the background color on active.</p></li>
+<li><p>active:border-{color}: This class changes the border color on active.</p></li>
+</ul>
+<p><strong>6)Disabled State</strong>:</p>
+<ul class="simple">
+<li><p>disabled:text-{color}: This class changes the text color when an element is disabled.</p></li>
+</ul>
+<p><strong>7)Customizing Colors</strong>:</p>
+<ul class="simple">
+<li><p>Tailwind allows you to customize the default color palette or add your own custom colors in the configuration file. This gives you full control over the colors used in your project.</p></li>
+</ul>
+<p><strong>8)Background Opacity and Text Opacity</strong>:</p>
+<ul class="simple">
+<li><p>bg-opacity-{value}: This class sets the background color opacity.</p></li>
+<li><p>text-opacity-{value}: This class sets the text color opacity.</p></li>
+</ul>
+<p><strong>9)Mixing Colors</strong>:
+You can combine color classes to achieve various effects. For example, you can set both the text and background color with classes like text-{color} and bg-{color}.</p>
+<p><strong>10)Current Color</strong>:</p>
+<ul class="simple">
+<li><p>current-{property}: You can use current-{property} (e.g., current-text) to apply the current color value to a specific property.</p></li>
+</ul>
+</section>
+<section id="flexbox">
+<h3><strong>3.4.4 Flexbox</strong><a class="headerlink" href="#flexbox" title="Link to this heading">¶</a></h3>
+<p>Tailwind CSS provides utility classes for working with Flexbox, which is a powerful layout model in CSS that allows you to create flexible and responsive designs. Here are some common Flexbox-related classes in Tailwind CSS:</p>
+<p><strong>1)Display (flex)</strong>:</p>
+<ul class="simple">
+<li><p>flex: This class sets the display property to flex, turning an element into a flex container.</p></li>
+</ul>
+<p><strong>2)Flex Direction (flex-{direction})</strong>:</p>
+<ul class="simple">
+<li><p>flex-row: Sets the main axis to be horizontal (default).</p></li>
+<li><p>flex-row-reverse: Reverses the main axis horizontally.</p></li>
+<li><p>flex-col: Sets the main axis to be vertical.</p></li>
+<li><p>flex-col-reverse: Reverses the main axis vertically.</p></li>
+</ul>
+<p><strong>3)Flex Wrap (flex-wrap)</strong>:</p>
+<ul class="simple">
+<li><p>flex-wrap: Allows flex items to wrap onto multiple lines if needed.</p></li>
+<li><p>flex-no-wrap: Prevents flex items from wrapping.</p></li>
+</ul>
+<p><strong>4)Justify Content (justify-{content})</strong>:</p>
+<ul class="simple">
+<li><p>justify-start: Aligns flex items to the start of the container.</p></li>
+<li><p>justify-end: Aligns flex items to the end of the container.</p></li>
+<li><p>justify-center: Centers flex items along the main axis.</p></li>
+<li><p>justify-between: Distributes flex items evenly with the first item at the start and the last item at the end.</p></li>
+<li><p>justify-around: Distributes flex items evenly with equal space around them.</p></li>
+</ul>
+<p><strong>5)Flex Grow (flex-grow)</strong>:</p>
+<ul class="simple">
+<li><p>flex-grow: Allows a flex item to grow to fill available space.</p></li>
+</ul>
+<p><strong>6)Flex Shrink (flex-shrink)</strong>:</p>
+<ul class="simple">
+<li><p>flex-shrink: Allows a flex item to shrink if needed.</p></li>
+</ul>
+</section>
+<section id="grid">
+<h3><strong>3.4.5 Grid</strong><a class="headerlink" href="#grid" title="Link to this heading">¶</a></h3>
+<p>In Tailwind CSS, you can use utility classes to create grid layouts. Tailwind provides a flexible and powerful grid system that allows you to build complex layouts without writing custom CSS. Here’s an overview of how you can work with grids in Tailwind:</p>
+<p><strong>1)Grid Container (grid)</strong>:</p>
+<ul class="simple">
+<li><p>The grid container class (grid) sets up a grid context for child elements. It allows you to create rows and columns.</p></li>
+</ul>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;grid grid-cols-{n}&quot;</span><span class="p">&gt;</span>
+   <span class="cm">&lt;!-- Child elements go here --&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>2)Grid Columns (grid-cols-)</strong>:</p>
+<ul class="simple">
+<li><p>The grid-cols-{n} class defines the number of columns in the grid. For example, grid-cols-3 creates a grid with 3 equally sized columns.</p></li>
+</ul>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span> <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;grid grid-cols-3&quot;</span><span class="p">&gt;</span>
+   <span class="cm">&lt;!-- Child elements go here --&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>3) Grid Rows (grid-rows-)</strong>:</p>
+<ul class="simple">
+<li><p>The grid-rows-{n} class defines the number of rows in the grid. For example, grid-rows-2 creates a grid with 2 equally sized rows.</p></li>
+</ul>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span> <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;grid grid-rows-2&quot;</span><span class="p">&gt;</span>
+   <span class="cm">&lt;!-- Child elements go here --&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="borders">
+<h3><strong>3.4.6 Borders</strong><a class="headerlink" href="#borders" title="Link to this heading">¶</a></h3>
+<p>In Tailwind CSS, you can apply border styles to elements using utility classes. Here are some of the common border-related classes:</p>
+<p><strong>1)Border Width (border-)</strong>:</p>
+<ul class="simple">
+<li><p>border: Adds a default border to an element.</p></li>
+<li><p>border-{size}: Adds a border of a specific size (e.g., border-2 adds a 2px border).</p></li>
+<li><p>border-t, border-r, border-b, border-l: Adds a border to a specific side (top, right, bottom, left).</p></li>
+<li><p>border-x: Adds horizontal borders (left and right).</p></li>
+<li><p>border-y: Adds vertical borders (top and bottom).</p></li>
+<li><p>border-0: Removes the border.</p></li>
+</ul>
+<p><strong>2)Border Color (border-{color})</strong>:</p>
+<ul class="simple">
+<li><p>border-{color}: Sets the border color to a specific color (e.g., border-red-500 sets the border color to a shade of red).</p></li>
+</ul>
+<p><strong>3)Rounded Corners (rounded)</strong>:</p>
+<ul class="simple">
+<li><p>rounded: Adds a default border-radius to an element.</p></li>
+<li><p>rounded-{size}: Adds a specific border-radius size (e.g., rounded-md for medium rounded corners).</p></li>
+<li><p>rounded-t, rounded-r, rounded-b, rounded-l: Adds rounded corners to a specific side.</p></li>
+</ul>
+<p><strong>4)Border Style (border-solid)</strong>:</p>
+<ul class="simple">
+<li><p>border-solid: Sets the border style to solid.</p></li>
+<li><p>border-dashed: Sets the border style to dashed.</p></li>
+<li><p>border-dotted: Sets the border style to dotted.</p></li>
+</ul>
+<p><strong>5)Border Opacity (border-opacity-{value})</strong>:</p>
+<ul class="simple">
+<li><p>Sets the opacity of the border. value can be a number from 0 to 100 (e.g., border-opacity-50).</p></li>
+</ul>
+<p><strong>6)Border Collapse (border-collapse)</strong>:</p>
+<ul class="simple">
+<li><p>border-collapse: Sets the border-collapse property to collapse for tables.</p></li>
+</ul>
+<p><strong>7)Rounding Only a Specific Corner (rounded-{corner})</strong>:</p>
+<ul class="simple">
+<li><p>rounded-tl: Top-left corner</p></li>
+<li><p>rounded-tr: Top-right corner</p></li>
+<li><p>rounded-bl: Bottom-left corner</p></li>
+<li><p>rounded-br: Bottom-right corner</p></li>
+</ul>
+<p><strong>8)Border Radius (rounded-{size})</strong>:</p>
+<ul class="simple">
+<li><p>rounded-full: Gives the element a circular border (100% rounded).</p></li>
+</ul>
+<p><strong>9)Border Utilities with Hover and Focus States</strong>:</p>
+<ul class="simple">
+<li><p>You can use hover:border-{color}, focus:border-{color}, and similar classes to change border properties on hover or focus.</p></li>
+</ul>
+<p><strong>10)Border Transition (transition)</strong>:</p>
+<ul class="simple">
+<li><p>You can apply transition classes like transition-all to smoothly animate border changes.</p></li>
+</ul>
+</section>
+<section id="shadows">
+<h3><strong>3.4.7 Shadows</strong><a class="headerlink" href="#shadows" title="Link to this heading">¶</a></h3>
+<p>In Tailwind CSS, you can apply shadow styles to elements using utility classes. Here are some common shadow-related classes:</p>
+<p><strong>1)Drop Shadows (shadow-)</strong>:</p>
+<ul class="simple">
+<li><p>shadow-sm: Small drop shadow</p></li>
+<li><p>shadow: Default drop shadow</p></li>
+<li><p>shadow-md: Medium drop shadow</p></li>
+<li><p>shadow-lg: Large drop shadow</p></li>
+<li><p>shadow-xl: Extra large drop shadow</p></li>
+<li><p>shadow-2xl: Double extra large drop shadow</p></li>
+</ul>
+<p><strong>2)Inner Shadows (inner-shadow-)</strong>:</p>
+<ul class="simple">
+<li><p>inner-shadow-sm: Small inner shadow</p></li>
+<li><p>inner-shadow: Default inner shadow</p></li>
+<li><p>inner-shadow-md: Medium inner shadow</p></li>
+<li><p>inner-shadow-lg: Large inner shadow</p></li>
+<li><p>inner-shadow-xl: Extra large inner shadow</p></li>
+<li><p>inner-shadow-2xl: Double extra large inner shadow</p></li>
+</ul>
+<p><strong>3)Hover and Focus States</strong>:</p>
+<ul class="simple">
+<li><p>hover:shadow-{size}: This class applies a shadow on hover.</p></li>
+<li><p>focus:shadow-{size}: This class applies a shadow on focus.</p></li>
+</ul>
+<p><strong>4)Active State</strong>:</p>
+<ul class="simple">
+<li><p>active:shadow-{size}: This class applies a shadow on active.</p></li>
+</ul>
+</section>
+<section id="transitions">
+<h3><strong>3.4.8 Transitions</strong><a class="headerlink" href="#transitions" title="Link to this heading">¶</a></h3>
+<p>In Tailwind CSS, you can use utility classes to apply transitions and animations to elements. Here’s how you can do it:</p>
+<p><strong>1)Transition Property (transition-)</strong>:</p>
+<ul class="simple">
+<li><p>transition-{property}: This class sets the transition property. Replace {property} with the property you want to transition (e.g., opacity, transform, etc.).</p></li>
+</ul>
+<p><strong>2)Transition Duration (duration-)</strong>:</p>
+<ul class="simple">
+<li><p>duration-{value}: This class sets the duration of the transition. Replace {value} with the duration in milliseconds (e.g., duration-300 for a 300ms transition).</p></li>
+</ul>
+<p><strong>3)Transition Timing Function (ease-)</strong>:</p>
+<ul class="simple">
+<li><p>ease-{timing-function}: This class sets the timing function for the transition (e.g., ease-in, ease-out, ease-in-out, etc.).</p></li>
+</ul>
+<p><strong>4)Transition Delay (delay-)</strong>:</p>
+<ul class="simple">
+<li><p>delay-{value}: This class sets a delay before the transition starts. Replace {value} with the delay in milliseconds (e.g., delay-200 for a 200ms delay).</p></li>
+</ul>
+</section>
+</section>
+<section id="customization">
+<h2><strong>3.5 Customization</strong><a class="headerlink" href="#customization" title="Link to this heading">¶</a></h2>
+<p>Tailwind CSS is highly customizable. Developers can extend or override default styles by adding custom CSS rules.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">FrontEnd and UI/UX Documentation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html"><strong>1. Introduction</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Wireframe.html"><strong>2.What is a wireframe</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>3.What is Tailwind CSS</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features"><strong>3.1 Features</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation"><strong>3.2 Installation</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#via-cdn"><strong>3.2.1 Via CDN</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-npm"><strong>3.2.2 Using NPM</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration"><strong>3.3 Configuration</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-custom-styles"><strong>3.3.1 Creating Custom Styles</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#responsive-design"><strong>3.3.2 Responsive Design</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#utility-classes"><strong>3.4 Utility Classes</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#spacing"><strong>3.4.1 Spacing</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#typography"><strong>3.4.2 Typography</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#colors"><strong>3.4.3  Colors</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flexbox"><strong>3.4.4 Flexbox</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grid"><strong>3.4.5 Grid</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#borders"><strong>3.4.6 Borders</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shadows"><strong>3.4.7 Shadows</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#transitions"><strong>3.4.8 Transitions</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#customization"><strong>3.5 Customization</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Project.html"><strong>4.Project on Tailwind CSS</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="DaisyUI.html"><strong>5.Tailwind Library (Daisy UI)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="websiteRef.html"><strong>6.reference websites</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="WebMap.html"><strong>7. Website Mapping</strong></a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Wireframe.html" title="previous chapter"><strong>2.What is a wireframe</strong></a></li>
+      <li>Next: <a href="Project.html" title="next chapter"><strong>4.Project on Tailwind CSS</strong></a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Sandeep.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/Alldocs/TailwindCss.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
