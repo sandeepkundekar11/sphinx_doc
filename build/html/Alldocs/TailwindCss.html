@@ -1,41 +1,111 @@
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-<html lang="en" data-content_root="../">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>3.What is Tailwind CSS &#8212; FrontEnd and UI/UX Documentation  documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
-    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
-    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.What is Tailwind CSS &mdash; FrontEnd and UI/UX Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4.Project on Tailwind CSS" href="Project.html" />
-    <link rel="prev" title="2.What is a wireframe" href="Wireframe.html" />
-   
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="prev" title="2.What is a wireframe" href="Wireframe.html" /> 
+</head>
 
-  </head><body>
-  
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
           
+          
+          <a href="../index.html" class="icon icon-home">
+            FrontEnd and UI/UX Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html"><strong>1. Introduction</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Wireframe.html"><strong>2.What is a wireframe</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>3.What is Tailwind CSS</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features"><strong>3.1 Features</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation"><strong>3.2 Installation</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#via-cdn"><strong>3.2.1 Via CDN</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-npm"><strong>3.2.2 Using NPM</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration"><strong>3.3 Configuration</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-custom-styles"><strong>3.3.1 Creating Custom Styles</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#responsive-design"><strong>3.3.2 Responsive Design</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#utility-classes"><strong>3.4 Utility Classes</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#spacing"><strong>3.4.1 Spacing</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#typography"><strong>3.4.2 Typography</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#colors"><strong>3.4.3  Colors</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flexbox"><strong>3.4.4 Flexbox</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grid"><strong>3.4.5 Grid</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#borders"><strong>3.4.6 Borders</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shadows"><strong>3.4.7 Shadows</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#transitions"><strong>3.4.8 Transitions</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#customization"><strong>3.5 Customization</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Project.html"><strong>4.Project on Tailwind CSS</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="DaisyUI.html"><strong>5.Tailwind Library (Daisy UI)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="websiteRef.html"><strong>6.reference websites</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="WebMap.html"><strong>7. Website Mapping</strong></a></li>
+</ul>
 
-          <div class="body" role="main">
-            
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FrontEnd and UI/UX Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><strong>3.What is Tailwind CSS</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Alldocs/TailwindCss.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
   <section id="what-is-tailwind-css">
-<h1><strong>3.What is Tailwind CSS</strong><a class="headerlink" href="#what-is-tailwind-css" title="Link to this heading">¶</a></h1>
+<h1><strong>3.What is Tailwind CSS</strong><a class="headerlink" href="#what-is-tailwind-css" title="Link to this heading"></a></h1>
 <p>Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined utility classes to rapidly build modern and responsive web applications. It allows developers to create complex layouts and designs without writing custom CSS.</p>
 <section id="features">
-<h2><strong>3.1 Features</strong><a class="headerlink" href="#features" title="Link to this heading">¶</a></h2>
+<h2><strong>3.1 Features</strong><a class="headerlink" href="#features" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><strong>Utility-first Approach</strong>:
 Tailwind CSS emphasizes utility classes for styling, which allows for quick prototyping and development.</p></li>
@@ -48,16 +118,16 @@ Developers can extend Tailwind’s functionality with plugins for added features
 </ul>
 </section>
 <section id="installation">
-<h2><strong>3.2 Installation</strong><a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<h2><strong>3.2 Installation</strong><a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
 <section id="via-cdn">
-<h3><strong>3.2.1 Via CDN</strong><a class="headerlink" href="#via-cdn" title="Link to this heading">¶</a></h3>
+<h3><strong>3.2.1 Via CDN</strong><a class="headerlink" href="#via-cdn" title="Link to this heading"></a></h3>
 <p>Include the Tailwind CSS stylesheet in the &lt;head&gt; section of your HTML file:</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </section>
 <section id="using-npm">
-<h3><strong>3.2.2 Using NPM</strong><a class="headerlink" href="#using-npm" title="Link to this heading">¶</a></h3>
+<h3><strong>3.2.2 Using NPM</strong><a class="headerlink" href="#using-npm" title="Link to this heading"></a></h3>
 <p>Install Tailwind CSS using NPM:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>install<span class="w"> </span>tailwindcss
 </pre></div>
@@ -65,25 +135,25 @@ Developers can extend Tailwind’s functionality with plugins for added features
 </section>
 </section>
 <section id="configuration">
-<h2><strong>3.3 Configuration</strong><a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h2>
+<h2><strong>3.3 Configuration</strong><a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
 <p>Generate a Tailwind CSS configuration file by running the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npx<span class="w"> </span>tailwindcss<span class="w"> </span>init
 </pre></div>
 </div>
 <p>This creates a tailwind.config.js file where you can customize various aspects of Tailwind CSS, including colors, fonts, and more.</p>
 <section id="creating-custom-styles">
-<h3><strong>3.3.1 Creating Custom Styles</strong><a class="headerlink" href="#creating-custom-styles" title="Link to this heading">¶</a></h3>
+<h3><strong>3.3.1 Creating Custom Styles</strong><a class="headerlink" href="#creating-custom-styles" title="Link to this heading"></a></h3>
 <p>Extend or override default styles by modifying the configuration file. Add custom CSS classes, themes, and variants to tailor Tailwind CSS to your project’s needs.</p>
 </section>
 <section id="responsive-design">
-<h3><strong>3.3.2 Responsive Design</strong><a class="headerlink" href="#responsive-design" title="Link to this heading">¶</a></h3>
+<h3><strong>3.3.2 Responsive Design</strong><a class="headerlink" href="#responsive-design" title="Link to this heading"></a></h3>
 <p>Tailwind CSS provides responsive utility classes for creating designs that adapt to different screen sizes. Use classes like sm:, md:, lg:, and xl: to specify styles for various breakpoints.</p>
 </section>
 </section>
 <section id="utility-classes">
-<h2><strong>3.4 Utility Classes</strong><a class="headerlink" href="#utility-classes" title="Link to this heading">¶</a></h2>
+<h2><strong>3.4 Utility Classes</strong><a class="headerlink" href="#utility-classes" title="Link to this heading"></a></h2>
 <section id="spacing">
-<h3><strong>3.4.1 Spacing</strong><a class="headerlink" href="#spacing" title="Link to this heading">¶</a></h3>
+<h3><strong>3.4.1 Spacing</strong><a class="headerlink" href="#spacing" title="Link to this heading"></a></h3>
 <p>it provides a set of utility classes that make it easy to add margin and padding to elements. These classes follow a specific naming convention:</p>
 <ul class="simple">
 <li><p>m-: Margin utility</p></li>
@@ -112,7 +182,7 @@ Developers can extend Tailwind’s functionality with plugins for added features
 </ul>
 </section>
 <section id="typography">
-<h3><strong>3.4.2 Typography</strong><a class="headerlink" href="#typography" title="Link to this heading">¶</a></h3>
+<h3><strong>3.4.2 Typography</strong><a class="headerlink" href="#typography" title="Link to this heading"></a></h3>
 <p>Tailwind CSS provides utility classes for handling typography, which includes setting font sizes, font weights, line heights, and more. Here are some of the common typography-related classes in Tailwind CSS:</p>
 <p><strong>1) Font Size (text-)</strong>:</p>
 <ul class="simple">
@@ -186,7 +256,7 @@ Developers can extend Tailwind’s functionality with plugins for added features
 </ul>
 </section>
 <section id="colors">
-<h3><strong>3.4.3  Colors</strong><a class="headerlink" href="#colors" title="Link to this heading">¶</a></h3>
+<h3><strong>3.4.3  Colors</strong><a class="headerlink" href="#colors" title="Link to this heading"></a></h3>
 <p>In Tailwind CSS, you can use a wide range of utility classes to apply colors to various elements. Tailwind provides a default color palette, but it also allows for customization and extension. Here are some common ways to work with colors in Tailwind:</p>
 <p><strong>1)Text Color (text-)</strong>:</p>
 <ul class="simple">
@@ -236,7 +306,7 @@ You can combine color classes to achieve various effects. For example, you can s
 </ul>
 </section>
 <section id="flexbox">
-<h3><strong>3.4.4 Flexbox</strong><a class="headerlink" href="#flexbox" title="Link to this heading">¶</a></h3>
+<h3><strong>3.4.4 Flexbox</strong><a class="headerlink" href="#flexbox" title="Link to this heading"></a></h3>
 <p>Tailwind CSS provides utility classes for working with Flexbox, which is a powerful layout model in CSS that allows you to create flexible and responsive designs. Here are some common Flexbox-related classes in Tailwind CSS:</p>
 <p><strong>1)Display (flex)</strong>:</p>
 <ul class="simple">
@@ -272,7 +342,7 @@ You can combine color classes to achieve various effects. For example, you can s
 </ul>
 </section>
 <section id="grid">
-<h3><strong>3.4.5 Grid</strong><a class="headerlink" href="#grid" title="Link to this heading">¶</a></h3>
+<h3><strong>3.4.5 Grid</strong><a class="headerlink" href="#grid" title="Link to this heading"></a></h3>
 <p>In Tailwind CSS, you can use utility classes to create grid layouts. Tailwind provides a flexible and powerful grid system that allows you to build complex layouts without writing custom CSS. Here’s an overview of how you can work with grids in Tailwind:</p>
 <p><strong>1)Grid Container (grid)</strong>:</p>
 <ul class="simple">
@@ -303,7 +373,7 @@ You can combine color classes to achieve various effects. For example, you can s
 </div>
 </section>
 <section id="borders">
-<h3><strong>3.4.6 Borders</strong><a class="headerlink" href="#borders" title="Link to this heading">¶</a></h3>
+<h3><strong>3.4.6 Borders</strong><a class="headerlink" href="#borders" title="Link to this heading"></a></h3>
 <p>In Tailwind CSS, you can apply border styles to elements using utility classes. Here are some of the common border-related classes:</p>
 <p><strong>1)Border Width (border-)</strong>:</p>
 <ul class="simple">
@@ -359,7 +429,7 @@ You can combine color classes to achieve various effects. For example, you can s
 </ul>
 </section>
 <section id="shadows">
-<h3><strong>3.4.7 Shadows</strong><a class="headerlink" href="#shadows" title="Link to this heading">¶</a></h3>
+<h3><strong>3.4.7 Shadows</strong><a class="headerlink" href="#shadows" title="Link to this heading"></a></h3>
 <p>In Tailwind CSS, you can apply shadow styles to elements using utility classes. Here are some common shadow-related classes:</p>
 <p><strong>1)Drop Shadows (shadow-)</strong>:</p>
 <ul class="simple">
@@ -390,7 +460,7 @@ You can combine color classes to achieve various effects. For example, you can s
 </ul>
 </section>
 <section id="transitions">
-<h3><strong>3.4.8 Transitions</strong><a class="headerlink" href="#transitions" title="Link to this heading">¶</a></h3>
+<h3><strong>3.4.8 Transitions</strong><a class="headerlink" href="#transitions" title="Link to this heading"></a></h3>
 <p>In Tailwind CSS, you can use utility classes to apply transitions and animations to elements. Here’s how you can do it:</p>
 <p><strong>1)Transition Property (transition-)</strong>:</p>
 <ul class="simple">
@@ -411,108 +481,40 @@ You can combine color classes to achieve various effects. For example, you can s
 </section>
 </section>
 <section id="customization">
-<h2><strong>3.5 Customization</strong><a class="headerlink" href="#customization" title="Link to this heading">¶</a></h2>
+<h2><strong>3.5 Customization</strong><a class="headerlink" href="#customization" title="Link to this heading"></a></h2>
 <p>Tailwind CSS is highly customizable. Developers can extend or override default styles by adding custom CSS rules.</p>
 </section>
 </section>
 
 
+           </div>
           </div>
-          
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Wireframe.html" class="btn btn-neutral float-left" title="2.What is a wireframe" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Project.html" class="btn btn-neutral float-right" title="4.Project on Tailwind CSS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sandeep.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">FrontEnd and UI/UX Documentation</a></h1>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
 
-
-
-
-
-
-
-
-<h3>Navigation</h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Introduction.html"><strong>1. Introduction</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="Wireframe.html"><strong>2.What is a wireframe</strong></a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>3.What is Tailwind CSS</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#features"><strong>3.1 Features</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#installation"><strong>3.2 Installation</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#via-cdn"><strong>3.2.1 Via CDN</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#using-npm"><strong>3.2.2 Using NPM</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#configuration"><strong>3.3 Configuration</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#creating-custom-styles"><strong>3.3.1 Creating Custom Styles</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#responsive-design"><strong>3.3.2 Responsive Design</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#utility-classes"><strong>3.4 Utility Classes</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#spacing"><strong>3.4.1 Spacing</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#typography"><strong>3.4.2 Typography</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#colors"><strong>3.4.3  Colors</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#flexbox"><strong>3.4.4 Flexbox</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#grid"><strong>3.4.5 Grid</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#borders"><strong>3.4.6 Borders</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#shadows"><strong>3.4.7 Shadows</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#transitions"><strong>3.4.8 Transitions</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#customization"><strong>3.5 Customization</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Project.html"><strong>4.Project on Tailwind CSS</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="DaisyUI.html"><strong>5.Tailwind Library (Daisy UI)</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="websiteRef.html"><strong>6.reference websites</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="WebMap.html"><strong>7. Website Mapping</strong></a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="Wireframe.html" title="previous chapter"><strong>2.What is a wireframe</strong></a></li>
-      <li>Next: <a href="Project.html" title="next chapter"><strong>4.Project on Tailwind CSS</strong></a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>document.getElementById('searchbox').style.display = "block"</script>
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2023, Sandeep.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
-      
-      |
-      <a href="../_sources/Alldocs/TailwindCss.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>
