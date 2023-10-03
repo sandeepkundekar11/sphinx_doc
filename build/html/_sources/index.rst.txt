@@ -19,4 +19,5 @@ Welcome to FrontEnd and UI/UX Documentation's documentation!
    Alldocs/DaisyUI
    Alldocs/websiteRef
    Alldocs/WebMap
+   Alldocs/GitHub
    
